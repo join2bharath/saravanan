@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Document</title>
+    <style>
+        button{
+            margin: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <input type ="number" id="first"><br><br>
+    <input type ="number" id="second"><br><br>
+    <button id="add">Add</button><button  id="sub">sub</button><button id="mul">Mul</button><button id="div">Div</button><br>
+  <br>
+    result:<input type="text" id="result"  readonly></input>
+    </div>
+    <script>
+    
+
+   
+            var first=document.querySelector("#first");
+            var second=document.querySelector("#second");
+            var result=document.querySelector("#result");
+           var add=document.querySelector("#add");
+           add.addEventListener("click",()=>{
+            result.value=parseInt(first.value)+parseInt(second.value);
+            document.body.style="background-color:red";
+           });
+           var sub=document.querySelector("#sub");
+           sub.addEventListener("dblclick",()=>{
+            result.value=parseInt(first.value)-parseInt(second.value);
+           });
+           var add=document.querySelector("#mul");
+           mul.addEventListener("click",()=>{
+            result.value=parseInt(first.value)*parseInt(second.value);
+           });
+           var add=document.querySelector("#div");
+           div.addEventListener("click",()=>{
+            result.value=parseInt(first.value)/parseInt(second.value);
+           });
+    
+    </script>
+</body>
+</html>
